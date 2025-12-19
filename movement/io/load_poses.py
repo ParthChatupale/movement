@@ -34,11 +34,11 @@ def from_numpy(
 
     Parameters
     ----------
-    position_array : np.ndarray
+    position_array : numpy.ndarray
         Array of shape (n_frames, n_space, n_keypoints, n_individuals)
         containing the poses. It will be converted to a
         :class:`xarray.DataArray` object named "position".
-    confidence_array : np.ndarray, optional
+    confidence_array : numpy.ndarray, optional
         Array of shape (n_frames, n_keypoints, n_individuals) containing
         the point-wise confidence scores. It will be converted to a
         :class:`xarray.DataArray` object named "confidence".

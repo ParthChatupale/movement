@@ -454,9 +454,9 @@ def _write_single_row(
     ----------
     writer : csv.writer
         CSV writer object.
-    xy_values : np.ndarray
+    xy_values : numpy.ndarray
         Array with the x, y coordinates of the bounding box centroid.
-    wh_values : np.ndarray
+    wh_values : numpy.ndarray
         Array with the width and height of the bounding box.
     confidence : float | None
         Confidence score for the bounding box detection.
