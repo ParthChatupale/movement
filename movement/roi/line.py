@@ -36,7 +36,7 @@ class LineOfInterest(BaseRegionOfInterest):
 
         Parameters
         ----------
-        points : tuple of (x, y) pairs
+        points : tuple of (x, y) pairs 
             The points (in sequence) that make up the line segment. At least
             two points must be provided.
         loop : bool, default False
@@ -138,7 +138,7 @@ class LineOfInterest(BaseRegionOfInterest):
         direction : xarray.DataArray
             An array of vectors representing a given direction,
             e.g., the forward vector(s).
-        position : xr.DataArray
+        position : xarray.DataArray
             Spatial positions, considered the origin of the ``direction``.
         in_degrees : bool
             If ``True``, angles are returned in degrees. Otherwise angles are
