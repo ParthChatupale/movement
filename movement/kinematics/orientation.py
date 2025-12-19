@@ -201,7 +201,7 @@ def compute_forward_vector_angle(
     right_keypoint : Hashable
         Name of the right keypoint, e.g., "right_ear", used to compute the
         forward vector.
-    reference_vector : xr.DataArray | ArrayLike, optional
+    reference_vector : xarray.DataArray | ArrayLike, optional
         The reference vector against which the ``forward_vector`` is
         compared to compute 2D heading. Must be a two-dimensional vector,
         in the form [x,y] - where ``reference_vector[0]`` corresponds to the
