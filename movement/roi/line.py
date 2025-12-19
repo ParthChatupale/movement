@@ -36,7 +36,7 @@ class LineOfInterest(BaseRegionOfInterest):
 
         Parameters
         ----------
-        points : tuple of (x, y) pairs 
+        points : tuple of (x, y) pairs
             The points (in sequence) that make up the line segment. At least
             two points must be provided.
         loop : bool, default False
