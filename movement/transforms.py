@@ -125,16 +125,16 @@ def compute_homography_transform(
 
     Parameters
     ----------
-    src_points : np.ndarray
+    src_points : numpy.ndarray
         An array of shape (N, 2) representing N source points
         in 2-dimensional space. N >= 4.
-    dst_points : np.ndarray
+    dst_points : numpy.ndarray
         An array of shape (N, 2) representing N destination points
         in 2-dimensional space. N >= 4.
 
     Returns
     -------
-    np.ndarray
+    numpy.ndarray
         A (3, 3) transformation matrix that aligns the
         source points to the destination points.
 

@@ -44,7 +44,7 @@ def _convert_fps_to_none_if_invalid(fps: float | None) -> float | None:
 
 
 def _validate_type_ndarray(value: Any) -> None:
-    """Raise ValueError the value is a not numpy array."""
+    """Raise ValueError if the value is a not numpy array."""
     if not isinstance(value, np.ndarray):
         raise logger.error(
             ValueError(f"Expected a numpy array, but got {type(value)}.")
@@ -98,10 +98,10 @@ class ValidPosesDataset:
 
     Attributes
     ----------
-    position_array : np.ndarray
+    position_array : numpy.ndarray
         Array of shape (n_frames, n_space, n_keypoints, n_individuals)
         containing the poses.
-    confidence_array : np.ndarray, optional
+    confidence_array : numpy.ndarray, optional
         Array of shape (n_frames, n_keypoints, n_individuals) containing
         the point-wise confidence scores.
         If None (default), the scores will be set to an array of NaNs.
@@ -257,15 +257,15 @@ class ValidBboxesDataset:
 
     Attributes
     ----------
-    position_array : np.ndarray
+    position_array : numpy.ndarray
         Array of shape (n_frames, n_space, n_individuals)
         containing the tracks of the bounding box centroids.
-    shape_array : np.ndarray
+    shape_array : numpy.ndarray
         Array of shape (n_frames, n_space, n_individuals)
         containing the shape of the bounding boxes. The shape of a bounding
         box is its width (extent along the x-axis of the image) and height
         (extent along the y-axis of the image).
-    confidence_array : np.ndarray, optional
+    confidence_array : numpy.ndarray, optional
         Array of shape (n_frames, n_individuals) containing
         the confidence scores of the bounding boxes. If None (default), the
         confidence scores are set to an array of NaNs.
@@ -275,7 +275,7 @@ class ValidBboxesDataset:
         of the ``position_array``. The names will be in the format of
         ``id_<N>``, where <N>  is an integer from 0 to
         ``position_array.shape[1]-1``.
-    frame_array : np.ndarray, optional
+    frame_array : numpy.ndarray, optional
         Array of shape (n_frames, 1) containing the frame numbers for which
         bounding boxes are defined. If None (default), frame numbers will
         be assigned based on the first dimension of the ``position_array``,
