@@ -161,7 +161,7 @@ class BaseRegionOfInterest:
             Spatial position data, that is passed to
             ``how_to_compute_vector_to_region`` and used to compute the
             "vector to the region".
-        reference_vector : xarray.DataArray | np.ndarray
+        reference_vector : xarray.DataArray | numpy.ndarray
             Constant or time-varying vector to take signed angle with the
             "vector to the region".
         how_to_compute_vector_to_region : Callable
@@ -375,7 +375,7 @@ class BaseRegionOfInterest:
 
         Returns
         -------
-        np.ndarray
+        numpy.ndarray
             Coordinates of the point on ``self`` that is closest to
             ``position``.
 
@@ -419,7 +419,7 @@ class BaseRegionOfInterest:
 
         Returns
         -------
-        np.ndarray
+        numpy.ndarray
             Approach vector from the point to the region.
 
         See Also
